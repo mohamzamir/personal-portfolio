@@ -43,6 +43,20 @@ const ticketSections: SectionProps[] =
             subtitle: 'Work experience',
             tickets: [
                 {
+                    title: <TitleImage src={AmazonLogo} />,
+                    subtitle: 'Cloud Engineer Intern',
+                    text:
+                        `
+                        • Collaborated on cloud migration and modernization projects focusing on **containerization (Docker, Kubernetes)** and serverless architectures (**Lambda, Fargate**) to optimize scalability and streamline development workflows. Provided technical expertise on CI/CD pipelines, and IaC principles with CloudFormation.
+                        • Contributed to successful migration of **2 legacy applications** to the cloud using AWS CloudFormation, achieving **25% cost reduction** and **reduced technical debt** through automated deployment processes.
+                        • **Developed and implemented** CloudFormation templates and modular architecture patterns to standardize and expedite the creation of secure and scalable cloud environments, **enhancing developer productivity by 40%**.
+                        `,
+                    range: {
+                        start: new Date('2024/06/01'),
+                        end: new Date('2024/08/31'),
+                    },
+                },
+                {
                     title: 'Department of Computer Science',
                     subtitle: 'Undergraduate Research Assistant (Part-time)',
                     text:
@@ -98,20 +112,6 @@ const ticketSections: SectionProps[] =
                         displayText: 'Amazon',
                     }
                     */
-                },
-                {
-                    title: <TitleImage src={AmazonLogo} />,
-                    subtitle: 'Cloud Engineer Intern',
-                    text:
-                        `
-                        • Collaborated on cloud migration and modernization projects focusing on **containerization (Docker, Kubernetes)** and serverless architectures (**Lambda, Fargate**) to optimize scalability and streamline development workflows. Provided technical expertise on CI/CD pipelines, and IaC principles with CloudFormation.
-                        • Contributed to successful migration of **2 legacy applications** to the cloud using AWS CloudFormation, achieving **25% cost reduction** and **reduced technical debt** through automated deployment processes.
-                        • **Developed and implemented** CloudFormation templates and modular architecture patterns to standardize and expedite the creation of secure and scalable cloud environments, **enhancing developer productivity by 40%**.
-                        `,
-                    range: {
-                        start: new Date('2024/06/01'),
-                        end: new Date('2024/08/31'),
-                    },
                 },
             ],
         },
@@ -219,8 +219,7 @@ const ticketSections: SectionProps[] =
                 {
                     title: 'BEAT MAKER MACHINE',
                     text:
-                        `
-                        Created a webpage that allows the user to play Light and Sound Memory alike game through an intuitive user interface where the user must remember and follow the pattern of the lights of the buttons to finish a beat.
+                        `                        Created a webpage that allows the user to play Light and Sound Memory alike game through an intuitive user interface where the user must remember and follow the pattern of the lights of the buttons to finish a beat.
                         Implemented the randomized beats by using a built-in JavaScript library to generate sounds for buttons.
                         
             `,/*
@@ -303,3 +302,4 @@ const Content = (props: ContentProps) => {
 }
 
 export default Content;
+

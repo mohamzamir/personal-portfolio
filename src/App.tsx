@@ -51,7 +51,7 @@ function App() {
         <WindowScene />
         <Blocks>
           {
-            Content({ refs: refs, activeLink: activeLink })
+            Content({ refs: refs, activeLink: activeLink ?? 0 })
               .map((block) => block)
           }
           <Footer />

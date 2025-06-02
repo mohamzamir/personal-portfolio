@@ -5,6 +5,7 @@ import { SectionProps } from '../components/Section';
 import TitleImage from '../components/Ticket/TitleImage';
 import SBULogo from '../media/LogoSBU.png'
 import CEASLogo from '../media/CEAS_logo.png'
+import AmazonLogo from '../media/amazon.png'
 
 export type ContentProps = {
     refs: React.MutableRefObject<React.RefObject<HTMLDivElement>[]>;
@@ -31,7 +32,7 @@ const ticketSections: SectionProps[] =
             `,
                     range: {
                         start: new Date('2021/08/01'),
-                        end: new Date('2025/05/01'),
+                        end: new Date('2026/05/01'),
                     },
                 },
             ]
@@ -47,7 +48,7 @@ const ticketSections: SectionProps[] =
                     text:
                         `
                         Developed strategic collaboration with *Professor Amir Rahmati* and *IBM Research*, contributing significantly to numerous projects including the enhancement and optimization of the IBM Adversarial Robustness Toolbox (ART).
-                        Leveraged advanced ML algorithms and security measures to boost IBM ART toolbox’s performance by 35% and reduce computational latency by 20%.
+                        Leveraged advanced ML algorithms and security measures to boost IBM ART toolbox's performance by 35% and reduce computational latency by 20%.
                         Fortified security led to a 25% drop in data breaches, and improved anomaly detection decreased false positives by 15%, enhancing model defense and auditing efficiency.
             `,
                     range: {
@@ -98,7 +99,20 @@ const ticketSections: SectionProps[] =
                     }
                     */
                 },
-               
+                {
+                    title: <TitleImage src={AmazonLogo} />,
+                    subtitle: 'Cloud Engineer Intern',
+                    text:
+                        `
+                        • Collaborated on cloud migration and modernization projects focusing on **containerization (Docker, Kubernetes)** and serverless architectures (**Lambda, Fargate**) to optimize scalability and streamline development workflows. Provided technical expertise on CI/CD pipelines, and IaC principles with CloudFormation.
+                        • Contributed to successful migration of **2 legacy applications** to the cloud using AWS CloudFormation, achieving **25% cost reduction** and **reduced technical debt** through automated deployment processes.
+                        • **Developed and implemented** CloudFormation templates and modular architecture patterns to standardize and expedite the creation of secure and scalable cloud environments, **enhancing developer productivity by 40%**.
+                        `,
+                    range: {
+                        start: new Date('2024/06/01'),
+                        end: new Date('2024/08/31'),
+                    },
+                },
             ],
         },
         {
@@ -109,39 +123,39 @@ const ticketSections: SectionProps[] =
 
                 {
                     title: 'ScribbleSolver: Equation Solver Model',
-        
+
                     text:
                         `
                         Collaborated to design and implement a Handwritten Equation Solver using a Convolutional Neural Network (CNN) and Optical Character Recognition (OCR) technology. The model is proficient in recognizing digits and mathematical symbols, facilitating accurate translation of written inputs into solvable equations.
                         Achieved a high model accuracy of 98.27% with a minimized loss function of 0.656%, demonstrating the effective application of machine learning methodologies in solving complex, real-world problems.
 
             `,
-            /*
-                    range: {
-                        start: new Date('2022/04/01'),
-                        end: new Date('2022/12/01'),
-                    },
-                    */
+                    /*
+                            range: {
+                                start: new Date('2022/04/01'),
+                                end: new Date('2022/12/01'),
+                            },
+                            */
                     link: {
                         url: 'https://github.com/mohamzamir/ScribbleSolver-Equation-Solver-Model.git',
                         displayText: 'X^2+2X-3=0',
                     }
                 },
-                
+
                 {
                     title: 'GESTURE-DRIVEN INTERACTIVE ILLUSTRATION INTERFACE',
-        
+
                     text:
                         `
                         Developed an AI based hand tracking system and painter with *OpenCV* and *Mediapipe* which also has an UI based selection of brushes of different colors. It also recognizes the drawn characters with the help of *PyTesseract*.
                         Resulted in the identification of the landmarks of hands and instantly recognize the texts and numerical values with an accuaracy of 98%
             `,
-            /*
-                    range: {
-                        start: new Date('2022/04/01'),
-                        end: new Date('2022/12/01'),
-                    },
-                    */
+                    /*
+                            range: {
+                                start: new Date('2022/04/01'),
+                                end: new Date('2022/12/01'),
+                            },
+                            */
                     link: {
                         url: 'https://github.com/mohamzamir/Gesture-Driven-Interactive-Illustration-Interface.git',
                         displayText: 'GDIII',
@@ -149,18 +163,18 @@ const ticketSections: SectionProps[] =
                 },
                 {
                     title: 'GESTURE-DRIVEN INTERACTIVE ILLUSTRATION INTERFACE',
-        
+
                     text:
                         `
                         Developed an AI based hand tracking system and painter with *OpenCV* and *Mediapipe* which also has an UI based selection of brushes of different colors. It also recognizes the drawn characters with the help of *PyTesseract*.
                         Resulted in the identification of the landmarks of hands and instantly recognize the texts and numerical values with an accuaracy of 98%
             `,
-            /*
-                    range: {
-                        start: new Date('2022/04/01'),
-                        end: new Date('2022/12/01'),
-                    },
-                    */
+                    /*
+                            range: {
+                                start: new Date('2022/04/01'),
+                                end: new Date('2022/12/01'),
+                            },
+                            */
                     link: {
                         url: 'https://github.com/mohamzamir/Gesture-Driven-Interactive-Illustration-Interface.git',
                         displayText: 'GDIII',
@@ -180,14 +194,14 @@ const ticketSections: SectionProps[] =
                         `
                         Built a Java Simulator to calculate the path a person takes from input of a list of cities, and a list of roads from various cities, with their carrying capacities in terms of car per minute.
                         Implemented *DFS* and *Ford-Fulkerson Algorithm* to find the maximum amount of flow between two cities.
-                        It also implemented *Dijkstra’s Algorithm* to find the shortest path.
+                        It also implemented *Dijkstra's Algorithm* to find the shortest path.
             `,
-            /*
-                    range: {
-                        start: new Date('2022/03/01'),
-                        end: new Date('2020/04/01'),
-                    },
-                    */
+                    /*
+                            range: {
+                                start: new Date('2022/03/01'),
+                                end: new Date('2020/04/01'),
+                            },
+                            */
                     link: {
                         url: 'https://github.com/mohamzamir/Traffic-Congestion-Modeling-Tool.git',
                         displayText: 'Model',

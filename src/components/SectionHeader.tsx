@@ -30,9 +30,8 @@ const SectionHeader = (props: SectionHeaderProps) => (
             <Header lg='6' className='px-4 p-2'>
                 <Stack direction='horizontal' gap={2}>
                     <Historiated><FontAwesomeIcon icon={faArrowLeft} /></Historiated>
-                    <Historiated>{props.title[0]}</Historiated>
+                    <Historiated>{props.title}</Historiated>
                     <Stack gap={0} style={{ justifyContent: 'center' }}>
-                        <Caps><Bold>{props.title.slice(1)}</Bold></Caps>
                         <span style={{ color: color.FOREGROUND }}>
                             {props.subtitle && <Bold overrideColor={false}>{props.subtitle}</Bold>}
                         </span>

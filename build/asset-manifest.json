@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a2025524.css",
+    "main.js": "/static/js/main.5840bb67.js",
+    "static/js/206.3797caa5.chunk.js": "/static/js/206.3797caa5.chunk.js",
+    "static/media/computer.jpg": "/static/media/computer.d7b8627b40ce88f3e66f.jpg",
+    "static/media/CEAS_logo.png": "/static/media/CEAS_logo.f234790edaa246a2d655.png",
+    "static/media/LogoSBU.png": "/static/media/LogoSBU.25eb0363de3df3715600.png",
+    "static/media/amazon.png": "/static/media/amazon.1ee0dac3713a665f1341.png",
+    "index.html": "/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.a2025524.css",
+    "static/js/main.5840bb67.js"
+  ]
+}

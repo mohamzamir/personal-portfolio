@@ -1,7 +1,12 @@
 import { fontSize } from '../constants/fonts';
 import Title from './Title';
+import React from 'react';
 
-const Historiated: React.FC = ({ children }) => (
+type HistoriatedProps = {
+    children: React.ReactNode;
+};
+
+const Historiated = ({ children }: HistoriatedProps) => (
     <Title>
         <span style={{
             fontSize: fontSize.HISTORIATED,

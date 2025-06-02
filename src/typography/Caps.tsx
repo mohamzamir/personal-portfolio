@@ -1,12 +1,17 @@
 import Text from './Text';
 import styled from 'styled-components';
 import Bold from './Bold';
+import React from 'react';
 
 const Capped = styled.span`
   text-transform: uppercase;
 `;
 
-const Caps: React.FC = ({ children }) => (
+type CapsProps = {
+    children: React.ReactNode;
+};
+
+const Caps = ({ children }: CapsProps) => (
     <Capped>
         <Bold>
             <Text>
@@ -16,4 +21,4 @@ const Caps: React.FC = ({ children }) => (
     </Capped>
 );
 
-export default Caps
+export default Caps;

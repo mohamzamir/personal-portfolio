@@ -1,23 +1,19 @@
 import { font, fontSize } from '../constants/fonts';
 import color from '../constants/colors';
-import React from 'react'
-import { Component } from 'react';
+import React, { ReactNode } from 'react';
 
+type TextProps = {
+    children?: ReactNode;
+};
 
-class Text extends Component {
-    render(){
-        const {children} =  this.props
-        return (
-            <span style={{
-                fontFamily: font.BODY,
-                fontSize: fontSize.BODY,
-                color: color.MAIN,
-            }}>
-                {children}
-            </span>
-        )
-    }
-    
-}
+const Text = ({ children }: TextProps) => (
+    <span style={{
+        fontFamily: font.BODY,
+        fontSize: fontSize.BODY,
+        color: color.MAIN,
+    }}>
+        {children}
+    </span>
+);
 
-export default Text
+export default Text;

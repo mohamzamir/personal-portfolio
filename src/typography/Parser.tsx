@@ -1,38 +1,22 @@
+import React from 'react';
+import ReactMarkdown from 'react-markdown';
 import Highlight from './Highlight';
-import Text from './Text';
-import JsxParser from 'react-jsx-parser'
-import React from 'react'
 
 // Parses plaintext into JSX
 // new line produces new line
 
 export type ParserProps = {
     text: string;
-}
-
-function parseHighlights(text: string) {
-    return text.replace(
-        /\*(.*?)\*/gi,
-        '<Highlight>$1</Highlight>'
-    );
-}
-
-function parseNewlines(text: string) {
-    return text.split("\n").reduce((prev, line) => (
-        `${prev}<Text>${line}</Text>`
-    ));
-}
+};
 
 const Parser = (props: ParserProps) => (
-    <JsxParser
-        components={{ Highlight, Text }}
-        renderInWrapper={false}
-        jsx={
-            parseHighlights(
-                parseNewlines(props.text)
-            )
-        }
-    />
+    <ReactMarkdown
+        components={{
+            strong: ({ node, ...props }) => <Highlight>{props.children}</Highlight>,
+        }}
+    >
+        {props.text}
+    </ReactMarkdown>
 );
 
-export default Parser
+export default Parser;

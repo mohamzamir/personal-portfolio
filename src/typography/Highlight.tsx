@@ -1,19 +1,17 @@
-import { font, fontSize } from '../constants/fonts';
+import { ReactNode } from 'react';
 import color from '../constants/colors';
-import { Component } from 'react';
 
-class Highlight extends Component {
-    render() {
-        const { children } = this.props;
-        return (
-            <span style={{
-                color: color.HIGHLIGHT,
-                fontWeight: 'bold',
-            }}>
-                {children}
-            </span>
-        );
-    }
-}
+type HighlightProps = {
+    children?: ReactNode;
+};
 
-export default Highlight
+const Highlight = ({ children }: HighlightProps) => (
+    <span style={{
+        color: color.HIGHLIGHT,
+        fontWeight: 'bold',
+    }}>
+        {children}
+    </span>
+);
+
+export default Highlight;

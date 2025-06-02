@@ -1,10 +1,14 @@
 import useMouse from "@react-hook/mouse-position";
 import format from "../constants/format";
-import { useRef } from "react";
+import { useRef, ReactNode } from "react";
 
 const DAMPENING_FACTOR = 0.05;
 
-const FollowMouse: React.FC = ({ children }) => {
+type FollowMouseProps = {
+    children: ReactNode;
+};
+
+const FollowMouse = ({ children }: FollowMouseProps) => {
 
     const ref = useRef(null)
     const mouse = useMouse(ref, {
@@ -18,9 +22,9 @@ const FollowMouse: React.FC = ({ children }) => {
             style={{
                 transition: `${format.TRANSITION_DURATION}s`,
                 transform:
-                    `${
+                    `$
                     // no need to translate if mouse is not in viewport
-                    mouse.x && mouse.y && mouse.elementWidth && mouse.elementHeight
+                    ${mouse.x && mouse.y && mouse.elementWidth && mouse.elementHeight
                         // do not animate if device is touch-based
                         && !mouse.isTouch
                         ? `translate(
